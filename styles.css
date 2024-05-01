@@ -1,0 +1,33 @@
+
+body {
+    background-image: url('https://img.freepik.com/free-photo/studio-background-concept-abstract-empty-light-gradient-purple-studio-room-background-product-plain-studio-background_1258-71253.jpg?t=st=1714520325~exp=1714523925~hmac=1900016becdc03d31ab874ca9850075281c10b1deeedfae4e6eae58c4e595ca5&w=1800');
+}
+
+h1 {
+  text-align: center;
+  color: #663399;
+}
+
+h2 {
+  text-align: center;
+  color: #483D8B;
+}
+
+table {
+ width: 65%;
+ margin: 0 auto;
+ border: 1px solid #4B0082;
+}
+
+th {
+    background-image: url('https://img.freepik.com/free-vector/gradient-abstract-with-diagonal-lines-background_23-2150559361.jpg?t=st=1714520398~exp=1714523998~hmac=0bb85c4ee5f8756b6f4c4435eb3f5138699ae17bfb612a1851197788d12a436e&w=1800');
+}
+
+td, tr {
+    border-top: 1px solid;
+
+}
+
+.code {
+    color: blue;
+}
