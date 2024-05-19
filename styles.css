@@ -1,0 +1,283 @@
+/* Freeman font-face definitions */
+@font-face {
+    font-family: "Freeman";
+    font-weight: 400;
+    font-style: normal;
+    src: url("/fonts/freeman.woff2") format("woff2");
+}
+
+/* Jacquard 12 font-face definitions */
+@font-face {
+    font-family: "Jacquard 12";
+    font-weight: 400;
+    font-style: normal;
+    src: url("/fonts/jacquard12-regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Jacquard 12";
+    font-weight: 700;
+    font-style: normal;
+    src: url("/fonts/jacquard12-bold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Jacquard 12";
+    font-weight: 400;
+    font-style: italic;
+    src: url("/fonts/jacquard12-italic.woff2") format("woff2");
+}
+
+/* PT Sans Narrow font-face definitions */
+@font-face {
+    font-family: "PT Sans Narrow";
+    font-weight: 400;
+    font-style: normal;
+    src: url("/fonts/pt-sans-narrow-regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "PT Sans Narrow";
+    font-weight: 700;
+    font-style: normal;
+    src: url("/fonts/pt-sans-narrow-bold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "PT Sans Narrow";
+    font-weight: 400;
+    font-style: italic;
+    src: url("/fonts/pt-sans-narrow-italic.woff2") format("woff2");
+}
+
+/* Poppins font-face definitions */
+@font-face {
+    font-family: "Poppins";
+    font-weight: 400;
+    font-style: normal;
+    src: url("/fonts/poppins-regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Poppins";
+    font-weight: 700;
+    font-style: normal;
+    src: url("/fonts/poppins-bold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Poppins";
+    font-weight: 400;
+    font-style: italic;
+    src: url("/fonts/poppins-italic.woff2") format("woff2");
+}
+  
+body {
+    margin: 0 10%;
+    background-image: url(https://img.freepik.com/free-vector/blue-pink-halftone-background_53876-99004.jpg?t=st=1716079836~exp=1716083436~hmac=7ea7e4466cd1f5a33de78fa1f0292c2553f4df753f0df0ec356d740dcec62358&w=1800);
+    background-size: 100% 100%;
+}
+
+h1 {
+    font-family: "Freeman", sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+    letter-spacing: 1px;
+    color: darkslategray;
+}
+
+h2 {
+    color: #2a2a2a;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ff6f61;
+    text-align: center;
+}
+
+.container {
+    border: 2px solid #a2a2a6;
+    border-radius: 15px;
+    padding: 40px;
+    margin: 20px;
+    background-color: #faf0e6;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Colors Container */
+.color-container {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    margin: 20px auto;
+}
+
+.color-panel {
+    display: inline-block;
+    width: 45%;
+    height: 150px;
+    text-align: center;
+    margin: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    vertical-align: top;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.color-panel p {
+    margin: 10px 0;
+}
+
+.color-panel:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.black-olive {
+    background-color: #3b3c36;
+    color: whitesmoke; 
+    margin: 10px;
+    padding: 5px;
+}
+
+.bright-navy-blue {
+    background-color: #1974d2;
+    margin: 10px;
+    padding: 5px;
+}
+
+.brunswick-green {
+    background-color: #1b4d3e;
+    color: whitesmoke; 
+    margin: 10px;
+    padding: 5px;
+}
+
+.cherry-blossom-pink {
+    background-color: #ffb7c5;
+    margin: 10px;
+    padding: 5px;
+}
+
+.dark-lavender {
+    background-color: #734f96;
+    color: whitesmoke; 
+    margin: 10px;
+    padding: 5px;
+}
+
+.indian-red {
+    background-color: #cd5c5c;
+    margin: 10px;
+    padding: 5px;
+}
+
+/* Fonts Container */
+.font-container {
+    font-size: 22px;
+    text-align: center;
+}
+
+.font-label {
+    font-size: 20px;
+    text-decoration: underline;
+    text-align: center;
+  }
+
+  .font-panel {
+    width: 55%;
+    display: inline-block;
+  }
+
+.font-panel p {
+    margin: 10px 0;
+}
+
+.jacquard-12-regular {
+    font-family: "Jacquard 12", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.jacquard-12-bold {
+    font-family: "Jacquard 12", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.jacquard-12-italic {
+    font-family: "Jacquard 12", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.pt-sans-narrow-regular {
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.pt-sans-narrow-bold {
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.pt-sans-narrow-italic {
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.poppins {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.poppins-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+.text-panel h1 {
+    font-weight: 700;
+    font-size: 32px;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+  }
+  
+  .text-panel h2 {
+    font-weight: 500;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+  }
+  
+  .text-panel p {
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+  }
+
+  h3 {
+    margin: 20px;
+  }
+
+  p {
+    margin: 20px;
+  }
