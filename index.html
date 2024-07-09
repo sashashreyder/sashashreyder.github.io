@@ -1,166 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Javascript Objects</title>
-
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Math: Task 1</title>
     <style>
-        .content {
-            background-color: #f9f9f9;
-            padding-top: 2px;
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-        }
-        .content p {
-            margin: 10px;
-            white-space: pre-wrap;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        .content code {
-            background-color: #eef;
-            padding: 10px;
-            display: block;
-            font-family: 'Courier New', Courier, monospace;
-        }
+      p {
+        color: purple;
+        margin: 0.5em 0;
+      }
 
-        .head {
-            background-color: #eef;
-            padding: 2px;
-            border-radius: 4px;
-            display: block;
-            border: 1px solid #ccc;
-            white-space: pre-wrap;
-            text-align-last: center;
-            margin: 10px;
-        }
+      * {
+        box-sizing: border-box;
+      }
     </style>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
 
-</head>
+  <body>
 
-<div class="head">
-<h1>10 exampes of Javascript objects</h1>
-</div>
+    <section class="preview">
 
-<body>
-    <div class="content">
-        <p><code>var cassete = {
-    "bandName": "NewBand",
-    "quantity": 100,
-    "canIBuyItOnline": true,
-    "canIBuyItOffline": false,
-    "MusiciansName": ["John", "Peter", "Ivan", "Fernando"],
-    "doesBandHasLiveShows": true,
-    "countryOfOrigin": "Brazil"
-};
-        </code></p>
+    </section>
 
-        <p><code>var Vikings = {
-    "typeOfShow": "Hystoic",
-    "quantityOfSeasons": 8,
-    "canIWatchItOnline": true,
-    "canIBuyItOnDvd": false,
-    "3BestCharacters": ["Ragnar", "Floki", "Lagertha"],
-    "awardsWon": true
-};</code></p>  
+  </body>
+  <script>
+    let finalResult;
 
-        <p><code>var JohnnyDepp = {
-    "dateOfBirth": new Date('1963-06-09'),
-    "placeOfBirth": "United States",
-    "occupation": ["actor", "musician"],
-    "greatestRoleInTheMovie": "Captain Jack Sparrow",
-    "awardsWon": true,
-    "height": 178,
-    "favoriteColor": "black",
-    "favoriteWine": "Chateau Calon-Segur"
-};</code></p>
+    let evenOddResult;
 
-        <p><code>var cat = {
-    "name": "Ruby",
-    "type": "cutiePie",
-    "occupation": "being Adorable",
-    "color": "orange",
-    "shape": "round",
-    "weightInKilos": 10,
-    "age": 3
-};</code></p>
+    // Add your code here
 
-        <p><code>var food = {
-    "name": ["batata", "potato"],
-    "surname": "frita",
-    "quantityInKilos": 100,
-    "color": "brown",
-    "placeOfUsing": ["kitchen", "dining Room"],
-    "bestSauce": ["ketchup", "barbecue", "mustard"]
-};</code></p>
+    const num1 = 10;
+    const num2 = 20;
+    const num3 = 30;
+    const num4 = 40;
 
-        <p><code>var cartoon = {
-    "name": "Family Guy",
-    "genreOfTheCartoon": "comedy",
-    "canIWatchItOnline": true,
-    "canIBuyItOnDvd": false,
-    "3BestCharacters": ["Louis", "Peter", "Stewie"],
-    "awardsWon": false
-};</code></p>
+    let x = num1+num2; 
+    let y = num4-num3;
+    finalResult = x*y;
 
-        <p><code>var dress = {
-    "brand": "Chanel",
-    "name": "wave",
-    "type": "cocktail Dress",
-    "color": "blue",
-    "pattern": false,
-    "size": "medium",
-    "length": "midi",
-    "sleeves": false,
-    "canIBuyItOnline": true,
-    "canIBuyItInTheShop": true,
-    "worldwideShipping": true,
-    "otherColorsInStock": true,
-    "otherSizesInStock": true,
-    "discounts": false
-};</code></p>
+    console.log(finalResult);
 
-        <p><code>var Hearthstone = {
-    "type": "online Game",
-    "genre": ["adventure", "card Game"],
-    "developer": "Blizzard",
-    "relatedGames": ["World Of Warcraft", "Warcraft"],
-    "differentGameModesAvailable": true,
-    "playWithFriends": true,
-    "playOffline": false,
-    "browserGame": false,
-    "inGamePurchases": true,
-    "differentCharacters": true
-};</code></p>
+    evenOddResult = finalResult;
 
-        <p><code>var Country = {
-    "name": "Brazil",
-    "continent": "South America",
-    "population": 215000000,
-    "largestEthnicGroup": "white Brazilians",
-    "size": 8510000,
-    "popularFood": ["brigadeiro", "pao De Queijo", "pastel", "farofa"],
-    "largestCity": "Sao Paulo",
-    "mostDangerousCity": "Rio De Janeiro",
-    "climate": "tropical",
-    "currency": "Brazilian Real",
-    "mostPopularSport": "football",
-    "language": "Brazilian Portuguese",
-    "famousFor": ["Samba", "football", "carnaval", "Rio De Janeiro", "food And Drinks"]
-};</code></p>
+    // Don't edit the code below here!
 
-        <p><code>var Book = {
-    "name": "Harry Potter",
-    "howManyParts": 7,
-    "author": "J.K. Rowling",
-    "yearOfPublishing": 1998,
-    "movie": true,
-    "mainMovieStars": ["Emma Watson", "Daniel Radcliffe", "Rupert Grint"]
-};</code></p>
-    </div>
+    const section = document.querySelector('section');
 
-</body>
+    const para1 = document.createElement('p');
+    const finalResultCheck = finalResult === 48 ? `Yes, well done!` : `No, it is ${ finalResult }`;
+    para1.textContent = `Is the finalResult 48? ${ finalResultCheck }`;
+    const para2 = document.createElement('p');
+    const evenOddResultCheck = evenOddResult === 0 ? 'The final result is even!' : 'The final result is odd. Hrm.';
+    para2.textContent = evenOddResultCheck;
+
+    section.appendChild(para1);
+    section.appendChild(para2);
+  </script>
+
 </html>
