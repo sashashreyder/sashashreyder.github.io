@@ -1,47 +1,241 @@
-* {
-    box-sizing: border-box;
-  }
-  
-  .box {
-    display: inline-block;
-    width: 100px;
-    height: 100px;
-    background: red;
-    color: white;
-  }
-  
-  #two {
-    position: relative;
-    top: 50px;
-    left: 10px;
-    background: greenyellow;
-    color: black;
-  }
-  
-  body {
-    width: 500px;
-    margin: 0 auto;
-  }
-  
-  p {
-    background: aqua;
-    border: 3px solid blue;
-    padding: 10px;
-    margin: 10px;
-  }
-  
-  span {
-    background: red;
-    border: 1px solid black;
-  }
-  
-  .positioned {
-    position: absolute;
-    background: yellow;
-    top: 250px;
-    left: 250px;
-  }
+/* General Styles */
+body {
+    font-family:  Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(270deg, #001f3f, #001a35, #002776, #001a35); /* Dark blue gradient */
+    background-size: 600% 600%; /* Increase the background size for smoother animation */
+    animation: gradientAnimation 15s ease infinite; /* Adjust animation duration as needed */
+}
 
-  .content {
-    margin-top: 100px;
-  }
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.image-container {
+    position: absolute;
+    left: 30px; /* Adjust left positioning as needed */
+    top: 6.3%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for precise vertical centering */
+    display: flex;
+    align-items: center; /* Vertically center the image */
+    height: 100%; /* Ensure the container takes the full height for vertical centering */
+}
+
+.image-container img {
+    display: block;
+    width: 230px; /* Adjusted width */
+}
+
+/* Header Section */
+header {
+    background-color: #009b3a;
+    color: white;
+    padding: 10px 0;
+    text-align: right;
+    border: #001a35 solid 2px;
+    margin: 0 auto;
+    width: auto;
+}
+
+
+
+/* Hero Section */
+.hero-section {
+    background-color: #002776; /* Dark blue */
+    position: relative;
+    border-radius: 8px;
+    display: flex;
+    margin: 20px auto;
+    justify-content: space-around; /* Vertically center */
+    align-items: center; /* Horizontally center */
+    text-align: center; /* Center text within the flex container */
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://img.freepik.com/free-photo/flag-brazil_1401-76.jpg?w=1800&t=st=1721437275~exp=1721437875~hmac=c29f6d034a268a3a61b66abbfbbd173dd9f5facacc28e78d49e0073134f3fd60');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3; /* Adjust opacity of the background image */
+    z-index: 1; /* Place the background image behind the content */
+}
+
+.hero-section img {
+    max-width:  40%;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 40px;
+    margin-top: 20px;
+    padding: 1px;
+    z-index: 2;
+
+}
+
+.hero-section-content {
+    color:white;
+    margin-bottom: 0px;
+    z-index: 2;
+    
+}
+
+.demo {
+    background-color: yellowgreen;
+    display: flex;
+    position: relative;
+    left: 50px;
+    top: 100px;
+    justify-content: center;
+    margin: auto;
+    padding: auto;
+    z-index: 2;
+}
+
+/* Content Section */
+.content-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.content {
+    flex: 1 1 calc(50% - 20px);
+    padding: 20px;
+    background-color: #002776;
+    border-radius: 8px;
+    align-items: center;
+}
+
+.content h2 {
+    margin-bottom: 10px;
+}
+
+p {
+    align-items: center;
+}
+
+/* Footer Section */
+footer {
+    background-color: #002776;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+/* Buttons */
+button, #scrollToTopBtn, #darkModeToggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #009b3a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+button:hover, #toggleDarkMode:hover {
+    background-color: #007e31;
+}
+
+h1, h2, h3 {
+    color: #fedf00; /* Yellow for headings */
+    font-family:"Bebas Neue";
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    position: relative;
+    margin-right: 30px;
+}
+
+h2 {
+    font-size: 66px;
+    z-index: 2;
+    position: relative;
+    bottom: 20px;
+    right: 77px;
+    justify-content: left;
+    display: flex;
+    text-align: left;
+    margin: auto;
+    padding: auto;
+
+}
+
+p {
+    color: #ccc; /* Light gray for paragraphs */
+}
+
+/* Dark Mode Styles */
+.dark-mode body {
+    background: linear-gradient(270deg, #0a1d2f, #0a1d2f, #001f3f, #0a1d2f); /* Slightly darker blue gradient for dark mode */
+    background-size: 600% 600%;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+.dark-mode header {
+    background-color: #333; /* Dark background */
+    color: #ddd; /* Light text */
+}
+
+.dark-mode .hero-section,
+.dark-mode .content-section .content,
+.dark-mode footer {
+    background-color: #444; /* Dark background */
+    color: #ddd; /* Light text */
+}
+
+.dark-mode h1, .dark-mode h2, .dark-mode h3 {
+    color: #ed9121; /* Yellow for headings */
+}
+
+.dark-mode p {
+    color: #ccc; /* Light gray for paragraphs */
+}
+/* Responsive Design */
+@media (max-width: 1100px) {
+    .hero-section {
+        grid-template-columns: 1fr;
+    }
+
+    .content {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    button, #scrollToTopBtn, #darkModeToggle {
+        bottom: 10px;
+        right: 10px;
+        padding: 8px 16px;
+    }
+}

@@ -1,51 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Position: CSS</title>
+    <title>Você encontrará seu caminho mais rápido!</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
 </head>
-
 <body>
 
-  <div class="box" id="one">One</div>
-  <div class="box" id="two">Two</div>
-  <div class="box" id="three">Three</div>
-  <div class="box" id="four">Four</div>
+    <header class="flexbox">
+        <div class="image-container">
+            <img class="logo" src="https://expofp.com/template/img/site-header-logo-inverse.png" alt="Placeholder image">
+        </div>
+        <h1>Você encontrará seu caminho mais rápido!</h1>
+    </header>
 
+    <div class="container">
+        <div class="hero-section">
+        <div class="requestDemo">
+            <button class="demo">Request Demo</button>
+        </div>
+            <h2>Bem-vindo à ExpoFP Brasil!</h2>
+            <img src="https://expofp.com/img/devices-2x.webp" alt="Placeholder image">
+            <div id="extra-hero-content" style="display: none;">
+                <h3>Additional Content</h3>
+                <p>This is some additional content in the second column of the hero section. </p>
+            </div>
+        </div>
 
- <div class="content">
+        <div class="content-section">
+            <div class="content">
+                <h3>Feature One</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
+            </div>
 
-  <h1>Absolute positioning</h1>
+            <div class="content">
+                <h3>Feature Two</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+            </div>  
 
-<p>
-  I am a basic block level element. My adjacent block level elements sit on new
-  lines below me.
-</p>
+        <div class="content-section">
+            <div class="content">
+                <h3>Feature Three</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+            </div>
+            <div class="content">
+                <h3>Feature Four</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+            </div>
+        </div>
+    </div>
 
-<p class="positioned">
-  By default we span 100% of the width of our parent element, and we are as tall
-  as our child content. Our total width and height is our content + padding +
-  border width/height.
-</p>
+    <footer>
+        <p>&copy; 2024 ExpoFP. All rights reserved.</p>
+    </footer>
 
-<p>
-  We are separated by our margins. Because of margin collapsing, we are
-  separated by the width of one of our margins, not both.
-</p>
+    <!-- Dark Mode Toggle Button -->
+    <button id="darkModeToggle" onclick="toggleDarkMode()">Dark Mode</button>
 
-<p>
-  inline elements <span>like this one</span> and <span>this one</span> sit on
-  the same line as one another, and adjacent text nodes, if there is space on
-  the same line. Overflowing inline elements
-  <span>wrap onto a new line if possible — like this one containing text</span>,
-  or just go on to a new line if not, much like this image will do:
-  <img src="long.jpg" />
-</p>
-</div>
-
+    <script src="script.js"></script>
 </body>
 </html>
