@@ -1,68 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Você encontrará seu caminho mais rápido!</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-
+    <title>Expo FP Brasil</title>
+    <link rel="stylesheet" href="style-header.css">
+    <link rel="stylesheet" href="style-body.css">
+    <link rel="stylesheet" href="style-hero.section.css">
 </head>
+
 <body>
 
-    <header class="flexbox">
-        <div class="image-container">
-            <img class="logo" src="https://expofp.com/template/img/site-header-logo-inverse.png" alt="Placeholder image">
+    <header>
+        <div class="header-container">
+            <img class="logo-header" src="https://expofp.com/template/img/site-header-logo-inverse.png" alt="Logo">
+            <h2 class="slogan">Encontre o seu caminho rapidamente!</h2>
         </div>
-        <h1>Você encontrará seu caminho mais rápido!</h1>
     </header>
 
-    <div class="container">
-        <div class="hero-section">
+    <div class="hero-section">
+        <h1 class="welcome">Bem-vindo à Expo FP Brasil!</h1>
+        <img class="main" src="https://expofp.com/img/devices-2x.webp" alt="Main Image">
         <div class="requestDemo">
-            <button class="demo">Request Demo</button>
-        </div>
-            <h2>Bem-vindo à ExpoFP Brasil!</h2>
-            <img src="https://expofp.com/img/devices-2x.webp" alt="Placeholder image">
-            <div id="extra-hero-content" style="display: none;">
-                <h3>Additional Content</h3>
-                <p>This is some additional content in the second column of the hero section. </p>
-            </div>
-        </div>
-
-        <div class="content-section">
-            <div class="content">
-                <h3>Feature One</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
-            </div>
-
-            <div class="content">
-                <h3>Feature Two</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-            </div>  
-
-        <div class="content-section">
-            <div class="content">
-                <h3>Feature Three</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-            </div>
-            <div class="content">
-                <h3>Feature Four</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-            </div>
+            <form action="/action_page.php">
+              <label for="requestDemo" id="text">Request Demo</label>
+              <label for="fname">E-mail</label>
+               <input type="text" id="femail" name="e-mail" placeholder="example@mail.com">
+               <label for="lname">Name</label>
+                <input type="text" id="fname" name="name" placeholder="Your name..">
+            <input type="submit" value="Submit">
+          </form>
         </div>
     </div>
 
+    <main>
+        <section id="home">
+            <h2>Home Section</h2>
+            <p>This is the home section of the website.</p>
+        </section>
+
+        <section id="about">
+            <h2>About Section</h2>
+            <p>This is the about section of the website.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Section</h2>
+            <p>This is the contact section of the website.</p>
+        </section>
+    </main>
+
     <footer>
-        <p>&copy; 2024 ExpoFP. All rights reserved.</p>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
     </footer>
 
-    <!-- Dark Mode Toggle Button -->
-    <button id="darkModeToggle" onclick="toggleDarkMode()">Dark Mode</button>
-
-    <script src="script.js"></script>
 </body>
 </html>
+    
