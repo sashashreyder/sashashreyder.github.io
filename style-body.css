@@ -4,6 +4,10 @@
 
 body {
     background-color: #5ab24d;
+    padding: 0%;
+    margin: 0%;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
 }
 
 
