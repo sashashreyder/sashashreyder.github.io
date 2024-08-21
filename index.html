@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="style-header.css">
     <link rel="stylesheet" href="style-body.css">
     <link rel="stylesheet" href="style-hero.section.css">
-    <link rel="stylesheet" href="/Users/invokedinfinity/Desktop/Projects/Kris/website/priceCards.css">
+    <link rel="stylesheet" href="hero.section.media.css">
+    <link rel="stylesheet" href="priceCards.css">
+    <link rel="stylesheet" href="priceCards.media.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
@@ -27,16 +29,16 @@
 
     <div class="hero-section">
         <h1 class="welcome">Bem-vindo à Expo FP Brasil!</h1>
-        <h2 class="pricing">Preços baseados no tamanho dos seus eventos</h2>
+        <h2 class="description">Plantas Baixas para eventos</h2>
         <img class="mainPicture" src="https://expofp.com/img/devices-2x.webp" alt="Main Image">
         <div class="requestDemo">
             <form action="/action_page.php">
-              <label for="requestDemo" id="text">Request Demo</label>
-              <label for="fname">E-mail</label>
-               <input type="text" id="femail" name="e-mail" placeholder="example@mail.com">
-               <label for="lname">Name</label>
-            <input type="text" id="fname" name="name" placeholder="Your name..">
-            <input type="submit" value="Submit">
+                <label id="text">Solicitar Demonstração</label>
+                <label for="femail" class="invisibleLabel">E-mail</label>
+                <input type="text" id="femail" name="e-mail" placeholder="example@mail.com">
+                <label for="fname" class="invisibleLabel">Nome</label>
+            <input type="text" id="fname" name="name" placeholder="Seu nome...">
+            <input type="submit" value="Enviar">
           </form>
         </div>
     </div>
@@ -95,7 +97,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p>&copy; 2024 ExpoFp. All rights reserved.</p>
     </footer>
 
 </body>

@@ -1,43 +1,46 @@
 .hero-section {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     padding: 20px;
-    box-sizing: border-box;
 }
 
 .mainPicture {
     display: flex;
-    width: 500px;
-    height: auto;
+    width: 400px;
 }
 
 .welcome {
     display: flex;
     align-items: center;
-    margin-top: 5px;
-    margin-bottom: 5px;
 }
 
-.pricing {
-    display: flex;
-    font-weight: lighter;
+.description {
+    margin: 0;
+    padding-bottom: 30px;
 }
 
 .requestDemo {
     display: flex;
     justify-content: center;    
     margin-top: 20px;
-    width: 2000px;
     margin-bottom: 5px;
 }
 
 .requestDemo form {
-    display: inline;
+    display: flex;
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-direction: row;
+    align-items: center;
+    width: 800px;
+}
+
+.invisibleLabel {
+    opacity: 0;
 }
 
 form action {
@@ -45,7 +48,6 @@ form action {
     justify-content: center;
     
 }
-
 
 #text {
     font-weight: bold;
@@ -59,6 +61,7 @@ form action {
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    width: 300px;
     
 }
 
@@ -69,10 +72,11 @@ form action {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    width: 100%;
+    width: 50%;
+    margin-left: 40px;
+
 }
 
 .requestDemo input[type="submit"]:hover {
     background-color: #45a049;
 }
-

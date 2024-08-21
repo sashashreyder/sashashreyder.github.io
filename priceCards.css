@@ -22,7 +22,15 @@
 }
 
 .featured {
-    border: 2px solid #45a049;
+    border: 2px solid #0b9e1c;
+    border-radius: 13px;
+    box-shadow: 0 1px 6px rgba(84, 94, 84, 0.833);
+}
+
+.featured:hover {
+    box-shadow: 0 1px 10px rgba(84, 94, 84, 0.833); 
+    transform: scale(1.05);
+    border-radius: 13px;
 }
 
 .card-header {
