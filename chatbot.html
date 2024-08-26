@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Chatbot</title>
+
+    <style>
+ #chatbot {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(185, 197, 181, 0.465);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#chatbot input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#chatbot button {
+    width: 120px;
+    padding: 10px;
+    background-color: #304e37;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.4s, transform 0.4s;
+}
+
+#chatbot button:hover {
+    transform: scale(1.1);
+    background-color: #1e7e34;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1); 
+}
+    </style>
+
+</head>
+
+<body>
+
+    <div id="chatbot">
+
+        <h2>Hello, stranger! What's up?</h2>
+        <input type="text" id="userInput" placeholder="Hello, cute chat! I want to ask you..." />
+        <button onclick="getResponse()">Let's go!</button>
+        <p id="response"></p>
+
+    </div>
+
+    <script>
+
+        function getResponse() {
+            var userInput = document.getElementById("userInput").value.toLowerCase();
+            var response;
+
+            if (userInput.includes("hello")) {
+                response = "Hey! How can I help";
+            } else if (userInput.includes("how are you")) {
+                response = "Perfect! What about you?";
+            } else if (userInput.includes("what is your name")) {
+                response = "My name is Cheburashka, and your?";
+            } else {
+                response = "What do you want, human?";
+            }
+
+            document.getElementById("response").textContent = response;
+        }
+
+    </script>
+</body>
+</html>
