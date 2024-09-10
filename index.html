@@ -2,7 +2,6 @@
 <html lang="pt-BR">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expo FP Brasil</title>
@@ -12,18 +11,18 @@
     <link rel="stylesheet" href="hero.section.media.css">
     <link rel="stylesheet" href="priceCards.css">
     <link rel="stylesheet" href="priceCards.media.css">
+    <link rel="stylesheet" href="FAQ.css">
+    <link rel="stylesheet" href="floor-plan-gallery.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
-
     <header>
         <div class="header-container">
             <img class="logo-header" src="https://expofp.com/template/img/site-header-logo-inverse.png" alt="Logo">
-               <img class="burgerMenuPic" src="https://icons.veryicon.com/png/o/miscellaneous/linear-icon-45/hamburger-menu-4.png"/>
+            <img class="burgerMenuPic" src="https://icons.veryicon.com/png/o/miscellaneous/linear-icon-45/hamburger-menu-4.png" alt="Menu">
         </div>
     </header>
 
@@ -32,74 +31,84 @@
         <h2 class="description">Plantas Baixas para eventos</h2>
         <img class="mainPicture" src="https://expofp.com/img/devices-2x.webp" alt="Main Image">
         <div class="requestDemo">
-            <form action="/action_page.php">
-                <label id="text">Solicitar Demonstração</label>
-                <label for="femail" class="invisibleLabel">E-mail</label>
-                <input type="text" id="femail" name="e-mail" placeholder="example@mail.com">
-                <label for="fname" class="invisibleLabel">Nome</label>
-            <input type="text" id="fname" name="name" placeholder="Seu nome...">
-            <input type="submit" value="Enviar">
-          </form>
+            <form action="/action_page.php" method="post">
+                <fieldset>
+                    <legend>Solicitar Demonstração</legend>
+                    <label for="femail">E-mail</label>
+                    <input type="email" id="femail" name="e-mail" placeholder="example@mail.com" required>
+                    <label for="fname">Nome</label>
+                    <input type="text" id="fname" name="name" placeholder="Seu nome..." required>
+                    <input type="submit" value="Enviar">
+                </fieldset>
+            </form>
         </div>
     </div>
 
     <main>
-        <div class="pricing-section">
-            <div class="price-card">
-                <div class="card-header">
-                    <h2>Basic Plan</h2>
-                    <p>$9.99/month</p>
+        <section class="floor-plan-gallery">
+            <h2>Some of our recent floor plans</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <a href="https://cowboychristmas2023.expofp.com/" target="_blank">
+                        <img src="12.png" alt="Cowboy Christmas 2023 Floor Plan 1">
+                    </a>
                 </div>
-                <div class="card-body">
-                    <ul>
-                        <li>Feature 1</li>
-                        <li>Feature 2</li>
-                        <li>Feature 3</li>
-                        <li>Feature 4</li>
-                    </ul>
-                    <a href="#" class="cta-button">Get Started</a>
+                <div class="gallery-item">
+                    <a href="https://cowboychristmas2023.expofp.com/" target="_blank">
+                        <img src="12.png" alt="Cowboy Christmas 2023 Floor Plan 2">
+                    </a>
                 </div>
-            </div>
-        
-            <div class="price-card featured">
-                <div class="card-header">
-                    <h2>Pro Plan</h2>
-                    <p>$29.99/month</p>
+                <div class="gallery-item">
+                    <a href="https://cowboychristmas2023.expofp.com/" target="_blank">
+                        <img src="12.png" alt="Cowboy Christmas 2023 Floor Plan 3">
+                    </a>
                 </div>
-                <div class="card-body">
-                    <ul>
-                        <li>Feature 1</li>
-                        <li>Feature 2</li>
-                        <li>Feature 3</li>
-                        <li>Feature 4</li>
-                    </ul>
-                    <a href="#" class="cta-button">Get Started</a>
+                <div class="gallery-item">
+                    <a href="https://cowboychristmas2023.expofp.com/" target="_blank">
+                        <img src="12.png" alt="Cowboy Christmas 2023 Floor Plan 4">
+                    </a>
                 </div>
-            </div>
-        
-            <div class="price-card">
-                <div class="card-header">
-                    <h2>Enterprise Plan</h2>
-                    <p>$99.99/month</p>
+                <div class="gallery-item">
+                    <a href="https://cowboychristmas2023.expofp.com/" target="_blank">
+                        <img src="12.png" alt="Cowboy Christmas 2023 Floor Plan 5">
+                    </a>
                 </div>
-                <div class="card-body">
-                    <ul>
-                        <li>Feature 1</li>
-                        <li>Feature 2</li>
-                        <li>Feature 3</li>
-                        <li>Feature 4</li>
-                    </ul>
-                    <a href="#" class="cta-button">Get Started</a>
+                <div class="gallery-item">
+                    <a href="https://cowboychristmas2023.expofp.com/" target="_blank">
+                        <img src="12.png" alt="Cowboy Christmas 2023 Floor Plan 6">
+                    </a>
                 </div>
             </div>
-        </div>
-        
+        </section>
+
+        <section class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3 class="faq-question">What is Expo FP Brasil?</h3>
+                <p class="faq-answer">Expo FP Brasil is a platform designed to showcase events, exhibitions, and fairs across Brazil. It provides information, resources, and tools to help organizers and participants connect and engage.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">How can I participate in an event?</h3>
+                <p class="faq-answer">To participate, simply register on the event page of your choice. You can find details about registration, fees, and requirements on each event's page.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">Can I host my event on Expo FP Brasil?</h3>
+                <p class="faq-answer">Yes, you can! Contact our support team to discuss hosting your event on our platform. We offer a variety of tools and services to help make your event a success.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">What payment methods are accepted?</h3>
+                <p class="faq-answer">We accept major credit cards, PayPal, and bank transfers. All transactions are secure and encrypted.</p>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 ExpoFp. All rights reserved.</p>
+        <!-- Footer content goes here -->
     </footer>
-
+    <script src="FAQ.js"></script>
 </body>
+
 </html>
-    

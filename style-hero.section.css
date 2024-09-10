@@ -7,7 +7,6 @@
 }
 
 .mainPicture {
-    display: flex;
     width: 400px;
 }
 
@@ -23,46 +22,33 @@
 
 .requestDemo {
     display: flex;
-    justify-content: center;    
+    justify-content: center;
     margin-top: 20px;
     margin-bottom: 5px;
+    width: 100%; /* Makes the form responsive */
 }
 
 .requestDemo form {
-    display: flex;
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    flex-direction: row;
-    align-items: center;
-    width: 800px;
-}
-
-.invisibleLabel {
-    opacity: 0;
-}
-
-form action {
+    width: 100%; /* Full width within its container */
+    max-width: 500px; /* Ensures it doesn’t get too wide */
     display: flex;
-    justify-content: center;
-    
-}
-
-#text {
-    font-weight: bold;
-    text-align: center; 
-    width: 100%; 
+    flex-direction: column; /* Aligns input fields in a column */
+    align-items: center; /* Centers the content inside */
 }
 
 .requestDemo input[type="text"], 
 .requestDemo input[type="email"] {
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    width: 300px;
-    
+    width: 100%; /* Inputs take the full width of the form */
+    max-width: 400px; /* Limit the max width */
+    box-sizing: border-box; /* Ensures padding doesn't overflow */
 }
 
 .requestDemo input[type="submit"] {
@@ -72,9 +58,9 @@ form action {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    width: 50%;
-    margin-left: 40px;
-
+    width: 100%; /* Button takes full width */
+    max-width: 200px; /* Limit button width */
+    margin-top: 15px;
 }
 
 .requestDemo input[type="submit"]:hover {

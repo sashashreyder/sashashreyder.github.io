@@ -2,8 +2,6 @@
 
 @media only screen and (max-width: 600px) {
     .pricing-section {
-        flex-direction: column;
-        padding: 20px;
         gap: 15px;
     }
 
@@ -17,7 +15,8 @@
     }
 
     .price-card {
-        width: 60%; 
+        width: 100%; 
+        max-width: 400px;;
         margin-bottom: 20px; 
     }
 
