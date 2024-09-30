@@ -32,7 +32,7 @@ function updateUI(progress) {
         looseText.style.display = 'block';
         protectionText.style.display = 'none';
         winText.style.display = 'none';
-    } else if (progress = 100) {
+    } else if (progress === 100) { // Fixed equality check
         winText.style.display = 'block';
         looseText.style.display = 'none';
         protectionText.style.display = 'none';
@@ -60,7 +60,8 @@ function defend(isEmotional) {
 }
 
 button1.addEventListener('click', () => defend(true));  
-button2.addEventListener('click', () => defend(false)); 
+button2.addEventListener('click', () => defend(false));  
+
 
 
 
