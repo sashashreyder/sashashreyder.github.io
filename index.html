@@ -1,166 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Javascript Objects</title>
-
-    <style>
-        .content {
-            background-color: #f9f9f9;
-            padding-top: 2px;
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-        }
-        .content p {
-            margin: 10px;
-            white-space: pre-wrap;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        .content code {
-            background-color: #eef;
-            padding: 10px;
-            display: block;
-            font-family: 'Courier New', Courier, monospace;
-        }
-
-        .head {
-            background-color: #eef;
-            padding: 2px;
-            border-radius: 4px;
-            display: block;
-            border: 1px solid #ccc;
-            white-space: pre-wrap;
-            text-align-last: center;
-            margin: 10px;
-        }
-    </style>
-
+    <title>Judging Box</title>
+    <link rel="stylesheet" href="style.css"> 
 </head>
-
-<div class="head">
-<h1>10 exampes of Javascript objects</h1>
-</div>
-
 <body>
-    <div class="content">
-        <p><code>var cassete = {
-    "bandName": "NewBand",
-    "quantity": 100,
-    "canIBuyItOnline": true,
-    "canIBuyItOffline": false,
-    "musiciansName": ["John", "Peter", "Ivan", "Fernando"],
-    "doesBandHasLiveShows": true,
-    "countryOfOrigin": "Brazil"
-};
-        </code></p>
-
-        <p><code>var Vikings = {
-    "typeOfShow": "Hystoic",
-    "quantityOfSeasons": 8,
-    "canIWatchItOnline": true,
-    "canIBuyItOnDvd": false,
-    "bestCharacters": ["Ragnar", "Floki", "Lagertha"],
-    "awardsWon": true
-};</code></p>  
-
-        <p><code>var JohnnyDepp = {
-    "dateOfBirth": new Date('1963-06-09'),
-    "placeOfBirth": "United States",
-    "occupation": ["actor", "musician"],
-    "greatestRoleInTheMovie": "Captain Jack Sparrow",
-    "awardsWon": true,
-    "height": 178,
-    "favoriteColor": "black",
-    "favoriteWine": "Chateau Calon-Segur"
-};</code></p>
-
-        <p><code>var cat = {
-    "name": "Ruby",
-    "type": "cutiePie",
-    "occupation": "being Adorable",
-    "color": "orange",
-    "shape": "round",
-    "weightInKilos": 10,
-    "age": 3
-};</code></p>
-
-        <p><code>var food = {
-    "name": ["batata", "potato"],
-    "surname": "frita",
-    "quantityInKilos": 100,
-    "color": "brown",
-    "placeOfUsing": ["kitchen", "dining Room"],
-    "bestSauce": ["ketchup", "barbecue", "mustard"]
-};</code></p>
-
-        <p><code>var cartoon = {
-    "name": "Family Guy",
-    "genreOfTheCartoon": "comedy",
-    "canIWatchItOnline": true,
-    "canIBuyItOnDvd": false,
-    "3BestCharacters": ["Louis", "Peter", "Stewie"],
-    "awardsWon": false
-};</code></p>
-
-        <p><code>var dress = {
-    "brand": "Chanel",
-    "name": "wave",
-    "type": "cocktail Dress",
-    "color": "blue",
-    "pattern": false,
-    "size": "medium",
-    "length": "midi",
-    "sleeves": false,
-    "canIBuyItOnline": true,
-    "canIBuyItInTheShop": true,
-    "worldwideShipping": true,
-    "otherColorsInStock": true,
-    "otherSizesInStock": true,
-    "discounts": false
-};</code></p>
-
-        <p><code>var Hearthstone = {
-    "type": "online Game",
-    "genre": ["adventure", "card Game"],
-    "developer": "Blizzard",
-    "relatedGames": ["World Of Warcraft", "Warcraft"],
-    "differentGameModesAvailable": true,
-    "playWithFriends": true,
-    "playOffline": false,
-    "browserGame": false,
-    "inGamePurchases": true,
-    "differentCharacters": true
-};</code></p>
-
-        <p><code>var Country = {
-    "name": "Brazil",
-    "continent": "South America",
-    "population": 215000000,
-    "largestEthnicGroup": "white Brazilians",
-    "size": 8510000,
-    "popularFood": ["brigadeiro", "pao De Queijo", "pastel", "farofa"],
-    "largestCity": "Sao Paulo",
-    "mostDangerousCity": "Rio De Janeiro",
-    "climate": "tropical",
-    "currency": "Brazilian Real",
-    "mostPopularSport": "football",
-    "language": "Brazilian Portuguese",
-    "famousFor": ["Samba", "football", "carnaval", "Rio De Janeiro", "food And Drinks"]
-};</code></p>
-
-        <p><code>var Book = {
-    "name": "Harry Potter",
-    "howManyParts": 7,
-    "author": "J.K. Rowling",
-    "yearOfPublishing": 1998,
-    "movie": true,
-    "mainMovieStars": ["Emma Watson", "Daniel Radcliffe", "Rupert Grint"]
-};</code></p>
+    <div class="square">
+        <button id="button1">Emotional Defense</button>
+        <button id="button2">Pragmatic Defense</button>
+        <div id="progressContainer">
+            <div id="progressBar" style="width: 0%;"></div>
+        </div>
+        <div id="looseText" style="display: none;">
+            <p>Your client goes to jail!</p>
+        </div>
+        <div id="protectionText" style="display: none;">
+            <p>You are almost there! Keep protection!</p>
+        </div>
+        <div id="winText" style="display: none;">
+            <p>Congratulations! You saved your client!</p>
+        </div>
     </div>
-
+    
+    <script src="scripr.js"></script>
 </body>
 </html>
