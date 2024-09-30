@@ -32,7 +32,7 @@ function updateUI(progress) {
         looseText.style.display = 'block';
         protectionText.style.display = 'none';
         winText.style.display = 'none';
-    } else if (progress === 100) { // Fixed equality check
+    } else if (progress === 100) { 
         winText.style.display = 'block';
         looseText.style.display = 'none';
         protectionText.style.display = 'none';
