@@ -1,166 +1,214 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Javascript Objects</title>
-
-    <style>
-        .content {
-            background-color: #f9f9f9;
-            padding-top: 2px;
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-        }
-        .content p {
-            margin: 10px;
-            white-space: pre-wrap;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        .content code {
-            background-color: #eef;
-            padding: 10px;
-            display: block;
-            font-family: 'Courier New', Courier, monospace;
-        }
-
-        .head {
-            background-color: #eef;
-            padding: 2px;
-            border-radius: 4px;
-            display: block;
-            border: 1px solid #ccc;
-            white-space: pre-wrap;
-            text-align-last: center;
-            margin: 10px;
-        }
-    </style>
-
+    <title>Expo FP Brasil</title>
+    <link rel="stylesheet" href="style-header.css">
+    <link rel="stylesheet" href="style-body.css">
+    <link rel="stylesheet" href="style-hero.section.css">
+    <link rel="stylesheet" href="hero.section.media.css">
+    <link rel="stylesheet" href="priceCards.css">
+    <link rel="stylesheet" href="priceCards.media.css">
+    <link rel="stylesheet" href="FAQ.css">
+    <link rel="stylesheet" href="floor-plan-gallery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLR1lvHG5+4KSV5d4O9A3TxI5Qc5goXWmJ6q5bGT2A" crossorigin="anonymous">
 </head>
 
-<div class="head">
-<h1>10 exampes of Javascript objects</h1>
-</div>
-
 <body>
-    <div class="content">
-        <p><code>var cassete = {
-    "bandName": "NewBand",
-    "quantity": 100,
-    "canIBuyItOnline": true,
-    "canIBuyItOffline": false,
-    "musiciansName": ["John", "Peter", "Ivan", "Fernando"],
-    "doesBandHasLiveShows": true,
-    "countryOfOrigin": "Brazil"
-};
-        </code></p>
+    <header>
+        <div class="header-container">
+            <img class="logo-header" src="https://expofp.com/template/img/site-header-logo-inverse.png" alt="Logo">
+            <img class="burgerMenuPic" src="https://icons.veryicon.com/png/o/miscellaneous/linear-icon-45/hamburger-menu-4.png" alt="Menu" onclick="toggleMenu()">
+        </div>
+        <nav class="menu-container">
+            <ul class="menu-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <p><code>var Vikings = {
-    "typeOfShow": "Hystoic",
-    "quantityOfSeasons": 8,
-    "canIWatchItOnline": true,
-    "canIBuyItOnDvd": false,
-    "bestCharacters": ["Ragnar", "Floki", "Lagertha"],
-    "awardsWon": true
-};</code></p>  
-
-        <p><code>var JohnnyDepp = {
-    "dateOfBirth": new Date('1963-06-09'),
-    "placeOfBirth": "United States",
-    "occupation": ["actor", "musician"],
-    "greatestRoleInTheMovie": "Captain Jack Sparrow",
-    "awardsWon": true,
-    "height": 178,
-    "favoriteColor": "black",
-    "favoriteWine": "Chateau Calon-Segur"
-};</code></p>
-
-        <p><code>var cat = {
-    "name": "Ruby",
-    "type": "cutiePie",
-    "occupation": "being Adorable",
-    "color": "orange",
-    "shape": "round",
-    "weightInKilos": 10,
-    "age": 3
-};</code></p>
-
-        <p><code>var food = {
-    "name": ["batata", "potato"],
-    "surname": "frita",
-    "quantityInKilos": 100,
-    "color": "brown",
-    "placeOfUsing": ["kitchen", "dining Room"],
-    "bestSauce": ["ketchup", "barbecue", "mustard"]
-};</code></p>
-
-        <p><code>var cartoon = {
-    "name": "Family Guy",
-    "genreOfTheCartoon": "comedy",
-    "canIWatchItOnline": true,
-    "canIBuyItOnDvd": false,
-    "3BestCharacters": ["Louis", "Peter", "Stewie"],
-    "awardsWon": false
-};</code></p>
-
-        <p><code>var dress = {
-    "brand": "Chanel",
-    "name": "wave",
-    "type": "cocktail Dress",
-    "color": "blue",
-    "pattern": false,
-    "size": "medium",
-    "length": "midi",
-    "sleeves": false,
-    "canIBuyItOnline": true,
-    "canIBuyItInTheShop": true,
-    "worldwideShipping": true,
-    "otherColorsInStock": true,
-    "otherSizesInStock": true,
-    "discounts": false
-};</code></p>
-
-        <p><code>var Hearthstone = {
-    "type": "online Game",
-    "genre": ["adventure", "card Game"],
-    "developer": "Blizzard",
-    "relatedGames": ["World Of Warcraft", "Warcraft"],
-    "differentGameModesAvailable": true,
-    "playWithFriends": true,
-    "playOffline": false,
-    "browserGame": false,
-    "inGamePurchases": true,
-    "differentCharacters": true
-};</code></p>
-
-        <p><code>var Country = {
-    "name": "Brazil",
-    "continent": "South America",
-    "population": 215000000,
-    "largestEthnicGroup": "white Brazilians",
-    "size": 8510000,
-    "popularFood": ["brigadeiro", "pao De Queijo", "pastel", "farofa"],
-    "largestCity": "Sao Paulo",
-    "mostDangerousCity": "Rio De Janeiro",
-    "climate": "tropical",
-    "currency": "Brazilian Real",
-    "mostPopularSport": "football",
-    "language": "Brazilian Portuguese",
-    "famousFor": ["Samba", "football", "carnaval", "Rio De Janeiro", "food And Drinks"]
-};</code></p>
-
-        <p><code>var Book = {
-    "name": "Harry Potter",
-    "howManyParts": 7,
-    "author": "J.K. Rowling",
-    "yearOfPublishing": 1998,
-    "movie": true,
-    "mainMovieStars": ["Emma Watson", "Daniel Radcliffe", "Rupert Grint"]
-};</code></p>
+    <div class="hero-section">
+        <video autoplay loop muted class="background-video">
+            <source src="istockphoto-1364238722-640_adpp_is.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <h1 class="welcome">Bem-vindo à Expo FP Brasil!</h1>
+        <h2 class="description">Plantas Baixas para eventos</h2>
+        <img class="mainPicture" src="https://expofp.com/img/devices-2x.webp" alt="Main Image">
+        <div class="requestDemo">
+            <form action="/action_page.php" method="post">
+                <fieldset>
+                    <legend>Solicitar Demonstração</legend>
+                    <label for="femail"></label>
+                    <input type="email" id="femail" name="e-mail" placeholder="example@mail.com" required>
+                    <label for="fname"></label>
+                    <input type="text" id="fname" name="name" placeholder="Seu nome..." required>
+                    <input type="submit" value="Enviar">
+                </fieldset>
+            </form>
+        </div>
     </div>
 
+    <main>
+        <section class="floor-plan-gallery">
+            <h2>Algumas de nossas Plantas Baixas recentes</h2>
+            <div class="gallery-wrapper">
+                <button class="prev-arrow" onclick="movePrev()">&#9664;</button>
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <a href="https://cowboychristmas2023.expofp.com/" target="_blank">
+                            <img src="12.png" alt="Cowboy Christmas 2023 Floor Plan 1">
+                        </a>
+                    </div>
+                    <div class="gallery-item">
+                        <a href="https://floridagroves.expofp.com/" target="_blank">
+                            <img src="florida_music_fest.png" alt="Florida Music Festival Floor Plan 2">
+                        </a>
+                    </div>
+                    <div class="gallery-item">
+                        <a href="https://okto2023.expofp.com/" target="_blank">
+                            <img src="oktoberfest.png" alt="Oktoberfest Floor Plan 3">
+                        </a>
+                    </div>
+                    <div class="gallery-item">
+                        <a href="https://pcmacl2024.expofp.com/" target="_blank">
+                            <img src="Convening Leaders.png" alt="Convening Leaders Floor Plan 4">
+                        </a>
+                    </div>
+                    <div class="gallery-item">
+                        <a href="https://ii-usa-2024.expofp.com/" target="_blank">
+                            <img src="investors.png" alt="Insurance Innovation Floor Plan 5">
+                        </a>
+                    </div>
+                    <div class="gallery-item">
+                        <a href="https://subsummit2024.expofp.com/" target="_blank">
+                            <img src="Subsummit.png" alt="Subsummit Floor Plan 6">
+                        </a>
+                    </div>
+                    <div class="gallery-item">
+                        <a href="https://cowboychristmas2023.expofp.com/" target="_blank">
+                            <img src="12.png" alt="Cowboy Christmas 2023 Floor Plan 7">
+                        </a>
+                    </div>
+                    <div class="gallery-item">
+                        <a href="https://cowboychristmas2023.expofp.com/" target="_blank">
+                            <img src="12.png" alt="Cowboy Christmas 2023 Floor Plan 8">
+                        </a>
+                    </div>
+                    <div class="gallery-item">
+                        <a href="https://cowboychristmas2023.expofp.com/" target="_blank">
+                            <img src="12.png" alt="Cowboy Christmas 2023 Floor Plan 9">
+                        </a>
+                    </div>
+                </div>
+                <button class="next-arrow" onclick="moveNext()">&#9654;</button>
+            </div>
+        </section>
+    </main>
+
+    <section class="pricing-section">
+        <div class="price-card">
+            <div class="card-header">
+                <h2>Basic Plan</h2>
+                <p>$19.99/month</p>
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li>10 GB Storage</li>
+                    <li>Unlimited Bandwidth</li>
+                    <li>24/7 Support</li>
+                </ul>
+                <a href="#" class="cta-button">Select Plan</a>
+                <button class="more-info-btn" onclick="toggleInfo(this)">More Info</button>
+                <div class="extra-info" style="display:none;">
+                    <p>This is the perfect plan for small businesses or personal websites. Enjoy reliable storage and 24/7 support to keep your site up and running.</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="price-card featured">
+            <div class="card-header">
+                <h2>Pro Plan</h2>
+                <p>$49.99/month</p>
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li>50 GB Storage</li>
+                    <li>Unlimited Bandwidth</li>
+                    <li>Priority Support</li>
+                    <li>Custom Features</li>
+                </ul>
+                <a href="#" class="cta-button">Select Plan</a>
+                <button class="more-info-btn" onclick="toggleInfo(this)">More Info</button>
+                <div class="extra-info" style="display:none;">
+                    <p>The Pro Plan offers advanced features including priority support and 50 GB storage, making it ideal for medium-sized businesses or high-traffic websites.</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="price-card">
+            <div class="card-header">
+                <h2>Premium Plan</h2>
+                <p>$99.99/month</p>
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li>200 GB Storage</li>
+                    <li>Unlimited Bandwidth</li>
+                    <li>Dedicated Support</li>
+                    <li>Custom Development</li>
+                </ul>
+                <a href="#" class="cta-button">Select Plan</a>
+                <button class="more-info-btn" onclick="toggleInfo(this)">More Info</button>
+                <div class="extra-info" style="display:none;">
+                    <p>Our Premium Plan is tailored for large enterprises. It includes custom development services, dedicated support, and ample storage for growing your online presence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+       
+    
+        <section class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3 class="faq-question">What is Expo FP Brasil?</h3>
+                <p class="faq-answer">Expo FP Brasil is a platform designed to showcase events, exhibitions, and fairs across Brazil. It provides information, resources, and tools to help organizers and participants connect and engage.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">How can I participate in an event?</h3>
+                <p class="faq-answer">To participate, simply register on the event page of your choice. You can find details about registration, fees, and requirements on each event's page.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">Can I host my event on Expo FP Brasil?</h3>
+                <p class="faq-answer">Yes, you can! Contact our support team to discuss hosting your event on our platform. We offer a variety of tools and services to help make your event a success.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="faq-question">What payment methods are accepted?</h3>
+                <p class="faq-answer">We accept major credit cards, PayPal, and bank transfers. All transactions are secure and encrypted.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <a class="footer" href="https://expofp.com" target="_blank">ExpoFP 2024</a>
+    </footer>
+    <script src="FAQ.js"></script>
+    <script src="flor-plan-gallery.js"></script>
 </body>
+
 </html>
