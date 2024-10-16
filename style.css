@@ -1,0 +1,381 @@
+/* Navbar */
+.navbar {
+    margin-bottom: 0;
+}
+
+/* Hero Section */
+#hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.8; 
+}
+
+#hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+#hero h1, #hero p, #hero .btn {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Email Subscription Form */
+form input[type="email"] {
+    width: 100%;
+    max-width: 400px; 
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Carousel Placeholders */
+.carousel-placeholder {
+    width: 250px;
+    height: 250px; 
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #6c757d;
+}
+
+.carousel-placeholder h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.carousel-placeholder p {
+    font-size: 1rem;
+}
+
+/* Carousel Controls (Arrows) */
+.carousel-control-prev, .carousel-control-next {
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: white; 
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/* Pricing Cards */
+.card {
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Middle (Featured) Card with Gradient */
+.featured {
+    border: 2px solid #0b9e1c;
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.bg-gradient {
+    background: linear-gradient(45deg, #491284, #2575fc);
+}
+
+/* Pricing Cards */
+.card {
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border: none;
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Highlight the middle card */
+.featured {
+    background: linear-gradient(135deg, #8e44ad, #9b59b6);
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.featured .btn {
+    background-color: #fff;
+    color: #8e44ad;
+}
+
+/* Pricing Cards */
+.card {
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 30px;
+    background: linear-gradient(135deg, #f1f2f6, #d1d8e0); /* Add background color */
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Highlight the middle card */
+.featured {
+    background: linear-gradient(135deg, #8e44ad, #9b59b6);
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.featured .btn {
+    background-color: #fff;
+    color: #8e44ad;
+}
+
+/* Pricing Cards */
+.card {
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 30px;
+    background: linear-gradient(to right, #e0e0e0, #757575);
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.bg-white {
+    background-color: transparent !important;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+}
+
+/* Middle (Featured) Card with Gradient */
+.featured {
+    background: linear-gradient(to right, #bdc3c7, #2c3e50);
+    color: #ffffff;
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Price Circle */
+.price-circle {
+    width: 90px;
+    height: 90px;
+    margin: 20px auto; 
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: #1e3a4e; 
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+/* Dropdown Arrow */
+.arrow {
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    color: #444; /* Lighter arrow color */
+}
+
+.collapse:not(.show) .arrow {
+    transform: rotate(0);
+}
+
+.collapse.show .arrow {
+    transform: rotate(180deg);
+}
+
+/* Collapsed content (more info) */
+.extra-info {
+    display: none;
+}
+
+.extra-info.show {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+/* General card text styles */
+.card-header {
+    color: #000000;
+    background-color: transparent;
+}
+
+.featuredHeader {
+    color: rgb(255, 255, 255);
+}
+
+.card-footer {
+    background-color: transparent;
+    border-top: none;
+}
+
+/* Buttons */
+.btn {
+    border-radius: 25px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3; 
+}
+
+/* Featured Card Button */
+.featured .btn {
+    background-color: #fff;
+    color: #000000;
+    border: none;
+}
+
+.featured .btn:hover {
+    background-color: #dfdfe4;
+}
+
+/* FAQ */
+
+/* Contact Form */
+
+/* Default styling for larger screens */
+.d-grid {
+    max-width: 200px;
+    margin-left: auto; /* Align the button to the right in larger screens */
+    margin-right: 0; /* No right margin */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .d-grid {
+        max-width: 100%;
+        margin-left: 0; /* Center the button */
+        margin-right: 0; /* Reset right margin */
+        display: flex;
+        justify-content: center; /* Center the button horizontally */
+    }
+
+    .btn {
+        width: 100%; /* Make the button take full width */
+    }
+}
+
+
+/* Full Name input specific styling */
+#name {
+    width: 100%;  
+    padding: 10px;
+    border-radius: 8px; 
+    border: 1px solid #ccc; 
+    box-shadow: none; 
+    transition: all 0.3s ease;
+}
+
+#name:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+    outline: none; 
+}
+
+    
+/* Footer */
+footer {
+    padding: 20px 0;
+    background-color: #343a40;
+    color: #fff;
+}
+
+
+/* General transition for fade-in effect */
+body {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in forwards;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Slight move upward */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Add transitions to buttons and form inputs for a softer interaction */
+button, input, .card, .navbar, .carousel-item {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover states to further enhance the softness */
+button:hover, input:hover, .card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Making the background videos or images appear softly */
+.hero-section {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in forwards 0.5s;
+}
+
+
